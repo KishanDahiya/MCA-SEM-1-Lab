@@ -63,5 +63,5 @@ while True:
         break
     else:
         print("Wrong value! please try again")
-        cursor.close()
-        db.close()
+cursor.close()
+db.close()

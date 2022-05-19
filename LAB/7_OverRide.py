@@ -14,7 +14,6 @@ class Employee():
  def increase(self):
   self.pay=int(self.pay*r)
 
-
 class Developer(Employee):
  def increase(self):
   r=1.8

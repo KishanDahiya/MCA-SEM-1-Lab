@@ -18,7 +18,7 @@ class derived1(student):
   print(f"USN : {self.usn}")
   print(f"Semester : {self.sem}")
 
-class marks():
+class marks(derived1):
  def __init__(self):
   derived1.__init__(self)
   print("-------This is the derived class 2 derived from derived class 1-------")

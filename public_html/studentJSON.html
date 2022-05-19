@@ -29,68 +29,67 @@ h2{
  font-size:18px;
 }
 </style>
-<h2>Displaying Students Information In Table</h2>
-<script>
- function createTable(){
-  var students=[
-                {
-                 "stud_ID" : "RVCEMCA21031",
-                 "stud_Name" : "Kishankumar Dahiya",
-                 "stud_DOB" : "15/06/1999",
-                 "stud_Batch" : "2021 - 23"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21032",
-                 "stud_Name" : "Harikumar D'Souza",
-                 "stud_DOB" : "25/10/1998",
-                 "stud_Batch" : "2021 - 24"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21033",
-                 "stud_Name" : "Minariz D'Souza",
-                 "stud_DOB" : "5/9/1999",
-                 "stud_Batch" : "2021 - 23"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21034",
-                 "stud_Name" : "Alwin Fernandes",
-                 "stud_DOB" : "11/3/1999",
-                 "stud_Batch" : "2021 - 23"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21035",
-                 "stud_Name" : "Harikumar Gouda",
-                 "stud_DOB" : "25/7/2000",
-                 "stud_Batch" : "2022 - 24"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21036",
-                 "stud_Name" : "Komal Solanki",
-                 "stud_DOB" : "22/8/1998",
-                 "stud_Batch" : "2021 - 23"
-                 },
-                {
-                 "stud_ID" : "RVCEMCA21037",
-                 "stud_Name" : "Debaditya Haider",
-                 "stud_DOB" : "2/12/2000",
-                 "stud_Batch" : "2021 - 23"
-                 }]
-  var tableBody="<table border=1><tr><th>USN</th><th>Name</th><th>Date of Birth</th><th>Branch</th><tr>"
-
-  students.forEach(function(d){
-   tableBody+="<tr><td>"+d.stud_ID+"</td><td>"+d.stud_Name+"</td><td>"+d.stud_DOB+"</td><td>"+d.stud_Batch+"</td></tr>"
-   });
-  
-  tableBody+="</table>"
-
-  var divContainer=document.getElementById("para1");
-  divContainer.innerHTML=tableBody;
-}
-</script>
 <body>
-<div style="display:grid;">
-<input type="button" id="button" onClick="createTable()" value="Click Here!!!">
-<p id="para1"></p>
-</div>
+  <h2>Displaying Students Information In Table</h2>
+  <div style="display:grid;">
+    <input type="button" id="button" onClick="createTable()" value="Click Here!!!">
+    <p id="para1"></p>
+  </div>
+  <script>
+    function createTable(){
+     var students=[
+                   {
+                    "stud_ID" : "RVCEMCA21031",
+                    "stud_Name" : "Kishankumar Dahiya",
+                    "stud_DOB" : "15/06/1999",
+                    "stud_Batch" : "2021 - 23"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21032",
+                    "stud_Name" : "Harikumar D'Souza",
+                    "stud_DOB" : "25/10/1998",
+                    "stud_Batch" : "2021 - 24"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21033",
+                    "stud_Name" : "Minariz D'Souza",
+                    "stud_DOB" : "5/9/1999",
+                    "stud_Batch" : "2021 - 23"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21034",
+                    "stud_Name" : "Alwin Fernandes",
+                    "stud_DOB" : "11/3/1999",
+                    "stud_Batch" : "2021 - 23"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21035",
+                    "stud_Name" : "Harikumar Gouda",
+                    "stud_DOB" : "25/7/2000",
+                    "stud_Batch" : "2022 - 24"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21036",
+                    "stud_Name" : "Komal Solanki",
+                    "stud_DOB" : "22/8/1998",
+                    "stud_Batch" : "2021 - 23"
+                    },
+                   {
+                    "stud_ID" : "RVCEMCA21037",
+                    "stud_Name" : "Debaditya Haider",
+                    "stud_DOB" : "2/12/2000",
+                    "stud_Batch" : "2021 - 23"
+                    }]
+     var tableBody="<table border=1><tr><th>USN</th><th>Name</th><th>Date of Birth</th><th>Branch</th><tr>"
+   
+     students.forEach(function(d){
+      tableBody+="<tr><td>"+d.stud_ID+"</td><td>"+d.stud_Name+"</td><td>"+d.stud_DOB+"</td><td>"+d.stud_Batch+"</td></tr>"
+      });
+     
+     tableBody+="</table>"
+   
+     document.getElementById("para1").innerHTML=tableBody;
+   }
+   </script>
 </body>
 </html>
