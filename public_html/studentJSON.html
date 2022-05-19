@@ -37,7 +37,7 @@ h2{
   </div>
   <script>
     function createTable(){
-     var students=[
+     var stud=`[
                    {
                     "stud_ID" : "RVCEMCA21031",
                     "stud_Name" : "Kishankumar Dahiya",
@@ -79,7 +79,8 @@ h2{
                     "stud_Name" : "Debaditya Haider",
                     "stud_DOB" : "2/12/2000",
                     "stud_Batch" : "2021 - 23"
-                    }]
+                    }]`
+     students=JSON.parse(stud)
      var tableBody="<table border=1><tr><th>USN</th><th>Name</th><th>Date of Birth</th><th>Branch</th><tr>"
    
      students.forEach(function(d){
