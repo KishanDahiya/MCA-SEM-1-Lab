@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: gainsboro;
+            text-align: center;
+            width: 100%;
+            height: 5rem;
+            border: 3px solid;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(105,105,105);
+        }
+        .left{
+            display: flex;
+            list-style: none;
+            padding-left: 0px;
+        }
+        li{
+            padding: 0px 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        section{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            text-align: center;
+        }
+        article{
+            margin: 20px 0px;
+        }
+        footer{
+            text-align: center;
+            width: 100%;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>INVENTORY BOOK STORE</h2>
+    </header>
+    <nav>
+        <ul class="left">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">REGISTER</a></li>
+            <li><a href="#">LOGIN</a></li>
+        </ul>
+        <ul>
+            <input type="text" placeholder="Searching">
+            <button>SEARCH</button>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+        <article>
+            <img src="./imag3.jpeg">
+            <figcaption>BOOK X</figcaption>
+            <button>ADD TO CART</button>
+            <details>BOOOK IS AMAZING</details>
+        </article>
+    </section>
+</body>
+<footer>copyright &COPY; 2022</footer>
+</html>
