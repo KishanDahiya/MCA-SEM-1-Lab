@@ -80,10 +80,7 @@ h2{
                     "stud_DOB" : "2/12/2000",
                     "stud_Batch" : "2021 - 23"
                     }]`
-     console.log(typeof(stud))
-     console.log(typeof(students))
-     students=JSON.parse(stud)
-     console.log(typeof(stud))
+     var students=JSON.parse(stud)
      var tableBody="<table border=1><tr><th>USN</th><th>Name</th><th>Date of Birth</th><th>Branch</th><tr>"
    
      students.forEach(function(d){
