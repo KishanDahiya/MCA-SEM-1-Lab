@@ -31,7 +31,7 @@ def prog(a,b,c):
  print(f"\nThe addition is {a+b+c}")
 
 while True:
- i=int(input("\n\n1)Hello Method No parameter\n2)Hello Method with 2 parameters\n3)Hello method with 2 parameters\n4)Program with 2 parameter\n5)Prog with 2 parameter\n6)Program with 3 parameter\n7)Program with 3 parameter\n8)Exit\nEnter the program you wanna run : "))
+ i=int(input("\n\n1)Hello Method No parameter\n2)Hello Method with parameter\n3)Hello method with 2 parameters\n4)Program with 2 parameter\n5)Prog with 2 parameter\n6)Program with 3 parameter\n7)Program with 3 parameter\n8)Exit\nEnter the program you wanna run : "))
  if i==1:
   Hello(True)
  elif i==2:
