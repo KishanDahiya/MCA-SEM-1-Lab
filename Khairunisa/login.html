@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="logo.jpeg">
+        <title>Book store-login form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <style>
+                .jumbotron  {
+                                background-color: darkseagreen;
+                            }
+
+                /*.navbar navbar-inverse 
+                            {
+                                margin-top: -20px;
+                            }*/
+
+                footer  {
+                            background-color: grey;
+                            color: black;
+                            height:50px;
+                            text-align: center;
+                            font-size: 30px;
+                        }
+        </style>
+
+        <body>
+            <div class="jumbotron">
+                <img src="logo.jpeg" style="float:left">
+                <div class="container text-center">
+                    <h1>Online Book Store</h1>
+                    <p>The Best Book Sellers</p>
+                </div>
+            </div>
+
+            <div class="navbar navbar-inverse" style="margin-top:-30px ;">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="program1.html">HOME</a></li>
+                        <li><a href="register.html">REGISTRATION</a></li>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">PROFILE</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user">&nbspUser</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart">&nbspCart</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1><center>Login Form</center></h1>
+
+            <!--<div class="container" style="border:1px solid black;margin-bottom: 5px;width:fit-content">
+            <form><center>
+                <br>
+                <input type="label" value="Username">
+                <input type="text"required>
+                <br><br>
+                <input type="label" value="Email">
+                <input type="email" required>
+                <br><br>
+                <input type="label" value="Contact number">
+                <input type="text" required>
+                <br><br>
+                <center><input type="button" value="Login" style="margin-bottom: 5px;"></center>
+            </form></center>
+            </div> -->
+
+            <div class="container text-center" style="margin-bottom:10px;width:250px;height: 250px;background-color: grey;">
+            <form>
+                <div class="form-group">
+                    Username
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    Email 
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    Password
+                    <input type="password" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button><br>
+
+            </form>
+            </div>
+
+            </body>
+
+            <footer>
+                <div class="container-fluid">&copy;rights reserved
+                    </div>
+                </footer>
+    </html>

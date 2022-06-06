@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>Alice</name>
+        <USN>A001</USN>
+        <Department>MCA</Department>
+        <University>VTU</University>
+    </student>
+    <student>
+        <name>Alice</name>
+        <USN>A002</USN>
+        <Department>MCA</Department>
+        <University>VTU</University>
+    </student>
+    <student>
+        <name>Alice</name>
+        <USN>A003</USN>
+        <Department>MCA</Department>
+        <University>VTU</University>
+    </student>
+</students>

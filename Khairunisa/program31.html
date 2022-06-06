@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student info using XML</title>
+
+        <style>
+            table   {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="studentdata()">Info</button>
+        <table id="win"></table>
+
+        <script>
+            
+            function studentdata()
+            {
+                var s=new XMLHttpRequest();
+
+                s.onreadystatechange=function()
+                {
+                    if(this.readyState==4 && this.status==200)
+                    {
+                        myfunction(this);
+                    }
+                };
+            
+                      
+            s.open("GET","program3.xml",true);
+            s.send();
+            }
+
+            function myfunction(xml)
+            {
+                var i;
+                var xmlDoc= xml.responseXML;
+
+                var tablebody="<tr><th>Name</th><th>USN</th><th><Department</th><th>University</th></tr>";
+                
+                var x=xmlDoc.getElementsByTagName("student");
+                for(i=0;i<x.length;i++)
+                {
+                    tablebody+="<tr><td>"+x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue+"</td><td>"+x[i].getElementsByTagName("USN")[0].childNodes[0].nodeValue+"</td><td>"+x[i].getElementsByTagName("Department")[0].childNodes[0].nodeValue+"</td><td>"+x[i].getElementsByTagName("University")[0].childNodes[0].nodeValue+"</td></tr>";
+                }
+            
+            document.getElementById("win").innerHTML=tablebody;
+            }
+        </script>
+
+    </body>
+</html>

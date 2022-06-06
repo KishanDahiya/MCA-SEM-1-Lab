@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			table,th,td{
+				border:2px solid black;
+				border-collapse:collapse;
+				text-align:center;
+				}
+		</style>
+	</head>
+	<body>
+		<script>
+			function jsonFunction(){
+				var students = [
+					{
+						"Name":"Jay",
+						"Age":22,
+						"Dept":"MCA",
+						"College":"RVCE"
+					},
+					{
+                                                "Name":"Deep",
+                                                "Age":21,
+                                                "Dept":"MCA",
+                                                "College":"RVCE"
+                                        },
+					{
+                                                "Name":"Krupa",
+                                                "Age":22,
+                                                "Dept":"MCA",
+                                                "College":"RVCE"
+                                        },
+					{
+                                                "Name":"Kinjal",
+                                                "Age":21,
+                                                "Dept":"MBA",
+                                                "College":"BHIMS"
+                                        },
+					{
+                                                "Name":"Indra",
+                                                "Age":24,
+                                                "Dept":"BTEch",
+                                                "College":"RVCE"
+                                        }];
+			var tableData = "<table><tr><th>Name</th><th>Age</th><th>Department</th><th>College</th></tr>";
+			students.forEach(function(x){
+				tableData+= "<tr><td>"+x.Name+"</td><td>"+x.Age+"</td><td>"+x.Dept+"</td><td>"+x.College+"</td></td>";
+				});
+				tableData+= "</table>"
+				document.getElementById("showData").innerHTML=tableData;
+				}
+		</script>
+		<input type="button" onclick=jsonFunction() value="Submit">
+		<p id = "showData">
+	</body>
+</html>

@@ -1,0 +1,58 @@
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin-top:670px;
+    font-style: italic;
+    }
+
+header{
+    text-align: center;
+    border: 1px solid black;
+    width: auto;
+    height:150px;
+    background-color: cyan;
+    }
+
+header h1{
+    margin-top: 50px;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+nav ul li {
+             float:left;
+             list-style: none;
+             padding:5px;
+        }
+
+section nav    {
+                border: 1px solid black;
+                height: 50px;
+                background-color: grey;
+}
+header img 
+                {
+                    float:left;
+                    width:90px;
+                    height:135px;
+                }
+
+article img     {
+                    width:450px;
+                    height:350px;
+                    border:1px solid black;
+                }
+div.imgdesc{
+    margin-top: 20px;
+    height: 350px;
+    width: 500px;
+    float:left;
+}
+
+body    {
+        background-color: lavender;
+}

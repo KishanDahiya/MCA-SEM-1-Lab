@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login form pattern matching</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <form>
+            Username
+            <input type="text" value="user" id="user" required>
+            Password
+            <input type="password" value="password" id="password" required>
+            <button type="button" class="btn btn-primary" value="Login" onclick="check(this.form)" required>Login</button>
+        </form>
+
+        <script>
+            var ck_user=/^1[A-ZA-Z0-90-9]{5,}$/;
+            var ck_pwd=/^(?=.*\d).{8,}$/;
+            var rndcol="#"+Math.floor(Math.random()*(2**24)).toString();
+
+            function check(form)
+            {
+                var userid=form.user.value;
+                var pwd=form.password.value;
+
+                if((ck_user.test(userid)) && (ck_pwd.test(pwd)))
+                {
+                    alert("welcome");
+                    document.body.style.backgroundColor=rndcol;
+                }
+                else
+                {
+                    alert("incorrect")
+                }
+            }
+        </script>
+
+    </body>
+
+</html>

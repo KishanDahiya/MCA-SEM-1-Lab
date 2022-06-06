@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Json</title>
+
+        <style>
+            table tr,th,td   {
+                border:1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Students Data</h1>
+        <button onclick="createtable()">Get data</button>
+        <table id="showData"></table>
+
+        <script>
+
+            function createtable()  {
+
+            var student = `[
+                                {
+                                    "name":"Alice",
+                                    "rollno":1,
+                                    "dept":"mca"
+                                },
+
+                                {
+                                    "name":"Flesin",
+                                    "rollno":2,
+                                    "dept":"mca"
+                                },
+
+                                {
+                                    "name":"Felina",
+                                    "rollno":3,
+                                    "dept":"mca"
+                                }
+                            ]`
+
+            var student=JSON.parse(student);
+
+            var tablebody='<tr><th>Name</th><th>RollNo</th><th>dept</th></tr>'
+
+            student.forEach(function(d)
+            {
+            tablebody+="<tr><td>"+d.name+"</td><td>"+d.rollno+"</td><td>"+d.dept+"</th></tr>";
+
+            });
+
+            document.getElementById("showData").innerHTML=tablebody;
+        }
+
+        </script>
+    </body>
+</html>
