@@ -4,16 +4,7 @@ class student():
   self.name=input("\nEnter your name : ")
   self.age=int(input("Enter your age : "))
   self.usn=input("Enter your USN : ")
-
-class ugstudent(student):
- def __init__(self):
-  student.__init__(self)
-  print("-------This is the derived class 1-------")
-  self.sem=int(input("Enter your semester : "))
-  self.fee=int(input("Enter your fee : "))
-  self.stipend=int(input("Enter the stipend : "))
-  ugstudent.display(self)
-
+ 
  def display(self):
   print(f"\n\nName : {self.name}")
   print(f"Age : {self.age}")
@@ -22,6 +13,16 @@ class ugstudent(student):
   print(f"Fees : {self.fee}")
   print(f"Stipend : {self.stipend}")
 
+
+class ugstudent(student):
+ def __init__(self):
+  student.__init__(self)
+  print("-------This is the derived class 1-------")
+  self.sem=int(input("Enter your semester : "))
+  self.fee=int(input("Enter your fee : "))
+  self.stipend=int(input("Enter the stipend : "))
+  student.display(self)
+
 class pgstudent(student): 
  def __init__(self):
   student.__init__(self)
@@ -29,7 +30,7 @@ class pgstudent(student):
   self.sem=int(input("Enter your semester : "))
   self.fee=int(input("Enter your fee : "))
   self.stipend=int(input("Enter the stipend : "))
-  ugstudent.display(self)
+  student.display(self)
 
  def display(self):
   print(f"\n\nName : {self.name}")
