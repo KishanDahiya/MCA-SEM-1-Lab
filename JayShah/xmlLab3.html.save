@@ -1,73 +1,73 @@
 <!DOCTYPE HTML>
 <html>
-	<?xml version="1.0" encoding="utf-8"?>
-		<students>
-			<student>
-				<name>Jay Shah</name>
-				<usn>RVCE21MCA012</usn>
-			</student>
-			<student>
-                                <name>Ravi</name>
-                                <usn>RVCE21MCA020</usn>
-                        </student>
-			<student>
-                                <name>Vipul</name>
-                                <usn>RVCE21MCA019</usn>
-                        </student>
-			<student>
-                                <name>Deep</name>
-                                <usn>RVCE21MCA018</usn>
-                        </student>
-			<student>
-                                <name>Sandeep</name>
-                                <usn>RVCE21MCA016</usn>
-                        </student>
-			<student>
-                                <name>Viraj</name>
-                                <usn>RVCE21MCA015</usn>
-                        </student>
-		</students>
-	<head>
-		<meta charset="utf-8">
-		<style>
-			student{
-				display:none;
-			}
-			table,th,td{
-				border:2px solid black;
-				border-collapse:collapse;
-			}
-			th,td{
-				padding:5px;
-			}
-			input{
-				width:200px;
-				height:75px;
-				border-radius:35px;
-				border:1px solid black;
-			}
-		</style>
-	</head>
-	<body>
-		<script>
-			function dataSet(){
-					var i;
-					var myTable = "<tr><th>Name</th><th>USN</th></tr>";
-					var n = document.getElementsByTagName("student");
-					for(i=0;i<n.length;i++){
-						myTable += "<tr><td>"+n[i].getElementsByTagName("name")[0]
-								.childNodes[0].nodeValue
-								+"</td><td>"
-								+n[i].getElementsByTagName("usn")[0]
-								.childNodes[0].nodeValue
-								+ "</td></tr>";
-						}
-			document.getElementById("dataTable").innerHTML=myTable;
-			}
-		</script>
-		<input type="button" onclick="dataSet()" value="Click Here">
-                <br>
-                <table id="dataTable"></table>
-	</body>
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+<student>
+<name>Jay Shah</name>
+<usn>RVCE21MCA012</usn>
+</student>
+<student>
+<name>Ravi</name>
+<usn>RVCE21MCA020</usn>
+</student>
+<student>
+<name>Vipul</name>
+<usn>RVCE21MCA019</usn>
+</student>
+<student>
+<name>Deep</name>
+<usn>RVCE21MCA018</usn>
+</student>
+<student>
+<name>Sandeep</name>
+<usn>RVCE21MCA016</usn>
+</student>
+<student>
+<name>Viraj</name>
+<usn>RVCE21MCA015</usn>
+</student>
+</students>
+<head>
+<meta charset="utf-8">
+<style>
+student{
+display:none;
+}
+table,th,td{
+border:2px solid black;
+border-collapse:collapse;
+}
+th,td{
+padding:5px;
+}
+input{
+width:200px;
+height:75px;
+border-radius:35px;
+border:1px solid black;
+}
+</style>
+</head>
+<body>
+<script>
+function dataSet(){
+var i;
+var myTable = "<tr><th>Name</th><th>USN</th></tr>";
+var n = document.getElementsByTagName("student");
+for(i=0;i<n.length;i++){
+myTable += "<tr><td>"+n[i].getElementsByTagName("name")[0]
+.childNodes[0].nodeValue
++"</td><td>"
++n[i].getElementsByTagName("usn")[0]
+.childNodes[0].nodeValue
++ "</td></tr>";
+}
+document.getElementById("dataTable").innerHTML=myTable;
+}
+</script>
+<input type="button" onclick="dataSet()" value="Click Here">
+<br>
+<table id="dataTable"></table>
+</body>
 </html>
 

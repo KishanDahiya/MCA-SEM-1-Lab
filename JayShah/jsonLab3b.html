@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>json data form table</title>
-		<script type="text/javascript">
-			function jsonData(){
-				let j=`[{
-					"name":"ravi",
-					"age":23,
-					"usn":"RVCE21MCA062"
-				},
-				{
-					"name":"rajat",
-					"age":18,
-					"usn":"RVCE22MCA021"
-				}]`;
-				let a = JSON.parse(j);
-				// console.log(a[0].name);
-				let tablebody="<table><tr><th>NAME</th><th>AGE</th><th>USN</th></tr>";
-				a.forEach(function(d){
-					tablebody+="<tr><td>"+d.name+"<td><td>"+d.age+"</td><td>"+d.usn+"</td></tr>";
-				});
-				tablebody+="</table>"
-				document.getElementById("showdata").innerHTML=tablebody;
-				}
-		</script>
-	</head>
-	<body>
-		<button onclick="jsonData()"> Click Here </button>
-		<p id="showdata"></p>
-				
-	</body>
+<head>
+<title>json data form table</title>
+<script type="text/javascript">
+function jsonData(){
+let j=`[{
+"name":"ravi",
+"age":23,
+"usn":"RVCE21MCA062"
+},
+{
+"name":"rajat",
+"age":18,
+"usn":"RVCE22MCA021"
+}]`;
+let a = JSON.parse(j);
+// console.log(a[0].name);
+let tablebody="<table><tr><th>NAME</th><th>AGE</th><th>USN</th></tr>";
+a.forEach(function(d){
+tablebody+="<tr><td>"+d.name+"<td><td>"+d.age+"</td><td>"+d.usn+"</td></tr>";
+});
+tablebody+="</table>"
+document.getElementById("showdata").innerHTML=tablebody;
+}
+</script>
+</head>
+<body>
+<button onclick="jsonData()"> Click Here </button>
+<p id="showdata"></p>
+</body>
 </html>

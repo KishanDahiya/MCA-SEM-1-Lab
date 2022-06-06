@@ -1,4 +1,3 @@
-
 const data = [
     { name: 'Jay', score: 99 },
     { name: 'Indra', score: 77  },
